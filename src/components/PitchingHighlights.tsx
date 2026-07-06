@@ -71,6 +71,18 @@ export default function PitchingHighlights() {
     >
       <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-[#0a1420]/20 to-[#0a0a0b]" />
 
+      {/* PDF page textured background */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/pdf-page-1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
+
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#1e90ff] mb-4">

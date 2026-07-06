@@ -130,6 +130,18 @@ export default function StatcastDashboard() {
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0b] via-[#0c1520]/40 to-[#0a0a0b]" />
       <div className="absolute top-1/3 right-0 w-[500px] h-[500px] rounded-full bg-[#e63946]/3 blur-[150px]" />
 
+      {/* Subtle background image */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/action-4.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
+
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* ─── Section header ─── */}
         <div className="text-center mb-12">

@@ -2,31 +2,31 @@
 
 const PHOTOS = [
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Max_Scherzer_%2851027484523%29_%28cropped%29.jpg/640px-Max_Scherzer_%2851027484523%29_%28cropped%29.jpg",
-    alt: "Max Scherzer pitching for the Washington Nationals",
-    caption: "Delivering Heat — Nationals Era",
-    year: "2019",
+    src: "/images/action-1.jpeg",
+    alt: "Max Scherzer in action on the mound",
+    caption: "Delivering Heat — Game Day",
+    year: "Mad Max",
     fallbackBg: "#1a3a5c",
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Max_Scherzer_%2818286797559%29.jpg/640px-Max_Scherzer_%2818286797559%29.jpg",
-    alt: "Max Scherzer in windup",
+    src: "/images/action-2.jpeg",
+    alt: "Max Scherzer intense game face",
     caption: "The Windup — Pure Intensity",
-    year: "2015",
+    year: "Focus",
     fallbackBg: "#2a1a3c",
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Max_Scherzer_%2832889654272%29.jpg/640px-Max_Scherzer_%2832889654272%29.jpg",
-    alt: "Max Scherzer throwing from the mound",
+    src: "/images/action-3.jpeg",
+    alt: "Max Scherzer pitching delivery",
     caption: "Game Face — Mad Max",
-    year: "2017",
+    year: "Dominance",
     fallbackBg: "#3a1a1a",
   },
   {
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Max_Scherzer_%2841755850991%29.jpg/640px-Max_Scherzer_%2841755850991%29.jpg",
-    alt: "Max Scherzer in Nationals uniform",
+    src: "/images/action-4.webp",
+    alt: "Max Scherzer on the field",
     caption: "The Ace — Leading the Staff",
-    year: "2018",
+    year: "Legend",
     fallbackBg: "#1a2a3c",
   },
 ];
@@ -44,6 +44,18 @@ export default function PhotoGallery() {
   return (
     <section id="gallery" className="relative py-24 sm:py-32 px-6 overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full bg-[#b8860b]/3 blur-[150px]" />
+
+      {/* Subtle background image */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/action-3.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
 
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-16">

@@ -20,6 +20,17 @@ export default function HeroSection() {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#0a1628] via-[#0a0a0b] to-[#0a0a0b]" />
 
+      {/* Subtle background texture from action shot */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/action-4.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      />
+
       {/* Radial glow behind hero */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-[#1e90ff]/5 blur-[120px]" />
 
@@ -27,10 +38,10 @@ export default function HeroSection() {
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] rounded-full border-2 border-transparent bg-gradient-to-r from-[#1e90ff]/30 to-[#b8860b]/30 blur-sm opacity-20" />
 
       {/* Player photo */}
-      <div className="absolute right-0 bottom-0 w-full md:w-[45%] h-[70vh] opacity-20 md:opacity-25 pointer-events-none">
+      <div className="absolute right-0 bottom-0 w-full md:w-[45%] h-[70vh] opacity-25 md:opacity-30 pointer-events-none">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Max_Scherzer_%2851027484523%29_%28cropped%29.jpg/800px-Max_Scherzer_%2851027484523%29_%28cropped%29.jpg"
-          alt="Max Scherzer pitching"
+          src="/images/avatar.png"
+          alt="Max Scherzer"
           className="w-full h-full object-cover object-right-bottom"
           style={{
             maskImage: "linear-gradient(to top, transparent 0%, rgba(0,0,0,0.4) 30%, transparent 100%)",

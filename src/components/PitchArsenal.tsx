@@ -62,6 +62,18 @@ export default function PitchArsenal() {
       {/* Background accent */}
       <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-[#b8860b]/3 blur-[150px]" />
 
+      {/* Subtle background image */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/avatar.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center 20%",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
+
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#b8860b] mb-4">

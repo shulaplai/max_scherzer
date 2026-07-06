@@ -46,6 +46,18 @@ export default function CareerTimeline() {
       {/* Section background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0b] to-transparent" />
 
+      {/* Subtle background image */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/action-2.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
+
       <div className="relative z-10 max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#1e90ff] mb-4">

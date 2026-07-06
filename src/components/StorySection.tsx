@@ -61,6 +61,18 @@ export default function StorySection() {
       {/* Background accent */}
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] rounded-full bg-[#1e90ff]/3 blur-[150px]" />
 
+      {/* PDF page background texture */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/acion-1.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
+
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#1e90ff] mb-4">

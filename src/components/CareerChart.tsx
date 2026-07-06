@@ -329,6 +329,18 @@ export default function CareerChart() {
     <section id="charts" className="relative py-24 sm:py-32 px-6 overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-[#1e90ff]/3 blur-[150px]" />
 
+      {/* Subtle background image */}
+      <div
+        className="absolute inset-0 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/action-3.jpeg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+        }}
+      />
+
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#1e90ff] mb-4">

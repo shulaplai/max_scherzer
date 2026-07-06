@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description:
       "The career, pitches, and story of a future Hall of Famer.",
     type: "website",
+    images: ["/images/avatar.png"],
   },
 };
 
