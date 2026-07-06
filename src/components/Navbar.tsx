@@ -4,7 +4,12 @@ import { useState, useEffect } from "react";
 
 const NAV_ITEMS = [
   { label: "Career", href: "#career" },
+  { label: "Stats", href: "#stats" },
+  { label: "Savant", href: "#statcast" },
+  { label: "Charts", href: "#charts" },
   { label: "Arsenal", href: "#arsenal" },
+  { label: "Motion", href: "#pitching" },
+  { label: "Gallery", href: "#gallery" },
   { label: "Story", href: "#story" },
 ];
 
@@ -37,7 +42,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider text-[#a1a1aa]">
+        <div className="hidden lg:flex items-center gap-5 text-[11px] font-medium uppercase tracking-wider text-[#a1a1aa]">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}
@@ -51,7 +56,7 @@ export default function Navbar() {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-[#f0ece4] p-2"
+          className="lg:hidden text-[#f0ece4] p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -67,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0a0a0b]/95 backdrop-blur-md border-b border-[#27272a] px-6 pb-4">
+        <div className="lg:hidden bg-[#0a0a0b]/95 backdrop-blur-md border-b border-[#27272a] px-6 pb-4">
           {NAV_ITEMS.map((item) => (
             <a
               key={item.href}

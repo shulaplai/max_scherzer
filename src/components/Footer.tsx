@@ -12,21 +12,27 @@ export default function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6 text-xs uppercase tracking-wider text-[#6b7280]">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs uppercase tracking-wider text-[#6b7280]">
             <a href="#hero" className="hover:text-[#f0ece4] transition-colors">
               Home
             </a>
-            <a
-              href="#career"
-              className="hover:text-[#f0ece4] transition-colors"
-            >
+            <a href="#career" className="hover:text-[#f0ece4] transition-colors">
               Career
             </a>
-            <a
-              href="#arsenal"
-              className="hover:text-[#f0ece4] transition-colors"
-            >
+            <a href="#stats" className="hover:text-[#f0ece4] transition-colors">
+              Stats
+            </a>
+            <a href="#charts" className="hover:text-[#f0ece4] transition-colors">
+              Charts
+            </a>
+            <a href="#arsenal" className="hover:text-[#f0ece4] transition-colors">
               Arsenal
+            </a>
+            <a href="#pitching" className="hover:text-[#f0ece4] transition-colors">
+              Motion
+            </a>
+            <a href="#gallery" className="hover:text-[#f0ece4] transition-colors">
+              Gallery
             </a>
             <a href="#story" className="hover:text-[#f0ece4] transition-colors">
               Story
