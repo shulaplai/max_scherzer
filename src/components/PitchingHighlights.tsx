@@ -75,7 +75,7 @@ export default function PitchingHighlights() {
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
-          backgroundImage: "url('/images/pdf-page-1.png')",
+          backgroundImage: "url('/images/acion-1.jpeg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
